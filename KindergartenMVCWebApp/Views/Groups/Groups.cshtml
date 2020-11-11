@@ -1,0 +1,52 @@
+﻿@model IEnumerable<KindergartenMVCWebApp.Models.Group>
+
+@{
+    ViewData["Title"] = "Groups";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Groups</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.GroupName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CountOfChildren)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.YearOfCreation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StaffId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TypeId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.GroupName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CountOfChildren)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.YearOfCreation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StaffId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TypeId)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

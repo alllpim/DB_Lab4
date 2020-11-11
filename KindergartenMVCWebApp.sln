@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KindergartenMVCWebApp", "KindergartenMVCWebApp\KindergartenMVCWebApp.csproj", "{E42080E9-5412-4DD3-8F64-1BCD68FED9FF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E42080E9-5412-4DD3-8F64-1BCD68FED9FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E42080E9-5412-4DD3-8F64-1BCD68FED9FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E42080E9-5412-4DD3-8F64-1BCD68FED9FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E42080E9-5412-4DD3-8F64-1BCD68FED9FF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B5F0F5DC-5358-43F3-AA3C-9E2E14BB1AFE}
+	EndGlobalSection
+EndGlobal
