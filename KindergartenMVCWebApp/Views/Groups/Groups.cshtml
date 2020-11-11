@@ -20,10 +20,10 @@
                 @Html.DisplayNameFor(model => model.YearOfCreation)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.StaffId)
+                @Html.DisplayNameFor(model => model.Staff.FullName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.TypeId)
+                @Html.DisplayNameFor(model => model.Type.NameOfType)
             </th>
             <th></th>
         </tr>
@@ -41,10 +41,10 @@
                 @Html.DisplayFor(modelItem => item.YearOfCreation)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.StaffId)
+                @Html.DisplayFor(modelItem => item.Staff.FullName)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.TypeId)
+                @Html.DisplayFor(modelItem => item.Type.NameOfType)
             </td>
         </tr>
 }

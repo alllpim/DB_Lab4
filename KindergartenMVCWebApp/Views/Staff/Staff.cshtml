@@ -26,7 +26,7 @@
                 @Html.DisplayNameFor(model => model.Reward)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.PositionId)
+                @Html.DisplayNameFor(model => model.Position.PositionName)
             </th>
             <th></th>
         </tr>
@@ -50,7 +50,7 @@
                 @Html.DisplayFor(modelItem => item.Reward)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.PositionId)
+                @Html.DisplayFor(modelItem => item.Position.PositionName)
             </td>
         </tr>
 }

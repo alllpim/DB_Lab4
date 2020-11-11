@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using KindergartenMVCWebApp.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace KindergartenMVCWebApp.Controllers
 {
@@ -23,7 +24,8 @@ namespace KindergartenMVCWebApp.Controllers
         [ResponseCache(CacheProfileName = "CacheProfile")]
         public IActionResult Groups()
         {
-            return View(db.Groups.Take(20).ToList());
+            var groups = db.Groups.Include(x => x.Staff).Include(x => x.Type).Take(20).ToList();
+            return View(groups);
         }
     }
 }
